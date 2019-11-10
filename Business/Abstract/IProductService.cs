@@ -9,7 +9,7 @@ namespace Business.Abstract
     public interface IProductService
     {
         IDataResult<Product> GetById(int productId);
-        IDataResult<List<Product>> GeList();
+        IDataResult<List<Product>> GetList();
         IDataResult<List<Product>> GetListByCategory(int categoryId);
 
         IResult Add(Product model);
